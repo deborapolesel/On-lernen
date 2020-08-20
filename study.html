@@ -6,24 +6,99 @@
     <title>On-lernen</title>
 
     <link rel="stylesheet" href="/stryles/main.css">
-    <link rel="stylesheet" href="/stryles/partials/page-landing.css">
+    <link rel="stylesheet" href="/stryles/partials/header.css">
+    <link rel="stylesheet" href="/stryles/partials/forms.css">
+    <link rel="stylesheet" href="/stryles/partials/page-study.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 </head>
-<body id="page-landing">
-    
+<body id="page-study">
     <div id="container">
-        <div class="logo-container">
-            <h1>On-lernen</h1>
-            <h2>Herzlich Willkommen! Jetzt Privathehrer in in Ihrer Nähe finden!</h2>
-        </div>
-
-        <img class="hero-image" src="/images/img3.png" alt="">
-
-        <div class="buttons-container">
-            <a class="study" href="/study.html"><img src="/images/iconbook.png" alt=""> Lernen</a>
-            <a class="give-classes" href="/give-classes.html"><img src="/images/iconteacher.png" alt=""> Lehren</a>
-        </div>
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/">Zurück</a>
+                <h1>On-lernen</h1>
+            </div>
+            <div class="header-content">
+                <strong>Profile passend zu Ihren Kriterien gefunden</strong>
+                <form id="search-teachers">
+                    <div class="select-block">
+                        <label for="subject">Fach</label>
+                        <select name="subject" id="subject">
+                            <option value="" disabled="" hidden="">Wählen Sie das Fach</option>
+                            <option value="1">Kunst</option>
+                            <option value="2">Biologie</option>
+                            <option value="3">Chemie</option>
+                            <option value="4">Sport</option>
+                            <option value="5">Physik</option>
+                            <option value="6">Geografie</option>
+                            <option value="7">Geschichte</option>
+                            <option value="8">Mathematik</option>
+                            <option value="9">Deutsch</option>
+                            <option value="10">Chemie</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <label for="weekday">Wochentag</label>
+                        <select name="weekday" id="weekday">
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="0">Sonntag</option>
+                            <option value="1">Montag</option>
+                            <option value="2">Dienstag</option>
+                            <option value="3">Mittwoch</option>
+                            <option value="4">Donnerstag</option>
+                            <option value="5">Freitag</option>
+                            <option value="6">Samstag</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <label for="time">Uhrzeit</label>
+                        <input name="time" id="time" type="time" >
+                    </div>
+                    <button type="submit">Suchen</button>
+                </form>
+            </div>
+        </header>
+        <main>
+            <article class="teacher-item">
+                <header>
+                    <img 
+                        src="/images/teacher1.jpg" 
+                        alt="Anna Frank">
+                    <div>
+                        <strong>Anna Frank</strong>
+                        <span>Geografie</span>
+                    </div>
+                </header>
+            
+                <p>Ich werde versuchen den Nachhilfeunterricht so abwechslungsreich wie möglich zu gestalten, denn man glaubt es kaum, aber lernen kann tatsächlich einfach sein und im besten Fall sogar Spaß machen.</p>
+            
+                <footer>
+                    <p>Preis pro Stunde<strong>15€</strong>
+                    </p>
+                    <button type="button">Unterricht buchen</button>
+                </footer>
+            </article>
+            <article class="teacher-item">
+                <header>
+                    <img 
+                        src="images/teacher2.jpg" 
+                        alt="Laura Müller">
+                    <div>
+                        <strong>Laura Müller</strong>
+                        <span>Geografie</span>
+                    </div>
+                </header>
+            
+                <p>Meine Lehrmethoden richten sich nach den Bedürfnissen der Schüler. Ich bin darauf angewiesen, von ihnen permanente Rückmeldung zu erhalten, um den Unterricht interessant und effektiv gestalten zu können.</p>
+            
+                <footer>
+                    <p>Preis pro Stunde<strong>15€</strong>
+                    </p>
+                    <button type="button">Unterricht buchen</button>
+                </footer>
+            </article> 
+        </main>
     </div>
 </body>
 </html>
